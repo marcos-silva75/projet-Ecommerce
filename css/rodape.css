@@ -1,6 +1,7 @@
 .rodape {
     grid-area: footer;
     background-color: var(--cor-cinza-escuro);
+    color: var(--cor --cor-roxa-clara);
 }
 
 .rodape .container {
@@ -18,7 +19,7 @@
 }
 
 .rodape nav ul li {
-    margin-bottom: 0.7rem;
+    margin-bottom: 12px;
     color: var(--cor-roxa-clara);
 }
 
@@ -30,7 +31,7 @@
 }
 
 .rodape nav a:hover {
-    color: var(--cor-neutra-clara)
+    color: var(--cor-neutra-clara);
 }
 
 .rodape .copyright {

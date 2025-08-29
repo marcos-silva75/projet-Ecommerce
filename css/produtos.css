@@ -53,7 +53,7 @@ main .informacoes {
 }
 
 main .informacoes span {
-    color: var(--cor-cinza-clara)
+    color: var(--cor-cinza-clara);
 }
 
 main .informacoes strong {
