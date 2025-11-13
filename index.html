@@ -5,180 +5,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce Master</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/cabecalho.css">
-    <link rel="stylesheet" href="css/produtos.css">
-    <link rel="stylesheet" href="css/modal-carrinho.css">
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div class="header-conteudo">
-            <div class="header-esquerda">
-
-                <button class="menu-amburguer">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <a class="logo" href="/">
-                    <img src="./assets/images/logo.svg" alt="Dev em Dobro">
-                </a>
-                <nav class="menu-principal">
-                    <ul>
-                        <li>
-                            <a href="Home">Home</a>
-                        </li>
-                        <li>
-                            <a href="#Sobre">Sobre</a>
-                        </li>
-                        <li>
-                            <a href="#Prdutos">Produtos</a>
-                        </li>
-                        <li>
-                            <a href="#faq">Perguntas frequentes</a>
-                        </li>
-                        <li>
-                            <a href="#Contato">Fale conosco</a>
-                        </li>
-                    </ul>
-                </nav>
-                <button class="botao-carrinho" data-micromodal-trigger="modal-1">
-                    <img src="./assets/images/icone_carrinho.svg" alt="Carrinho de compras">
-                    <span id="contador-carrinho">0</span>
-                </button>
-            </div>
-    </header>
+    <headder>
+        <a href="/">
+            <img src="./assets/images/logo.svg" alt="Logo E-commerce Master">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#Home">Home</a>
+                </li>
+                <li>
+                    <a href="#Sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#Produtos">Produtos</a>
+                </li>
+                <li>
+                    <a href="Faq">Perguntas Frequentes</a>
+                </li>
+                <a href="Contato">Fale Conosco</a>
+                </li>
+            </ul>
+        </nav>
+        <button>
+            <img src="./assets/images/icone_carrinho.svg" alt="Carrinho de compras">
+        </button>
+    </headder>
     <main>
-        <section class="produtos">
+        <section>
             <h2>Produtos</h2>
             <ul>
-                <li class="produto" data-id="camiseta-roxa">
+                <li>
                     <figure>
-                        <img src="./assets/images/camiseta_roxa.jpg" alt="Camiseta Dev em Dobro - roxa">
-                        <figcaption>Camiseta Dev em Dobro - Roxa</figcaption>
+                        <img src="./assets/images/camiseta_roxa.jpg" alt="Camiseta Dev em dobro-roxa">
+                        <figcaption>Camiseta Dev em Dobro Roxa</figcaption>
                     </figure>
-                    <div class="informacoes">
-                        <span>Cor : roxa</span>
-                        <span>Tamanho : M</span>
+                    <div>
+                        <span>Cor: Roxa</span>
+                        <span>Tamnanho: M</span>
                         <span>R$ 89,00</span>
-                        <button>Adiconar ao carrinho</button>
+                        <button>Adicionar ao Carrinho</button>
                     </div>
                 </li>
                 <li>
                     <figure>
-                        <img src="./assets/images/caneca_devemdobro.jpg" alt="Caneca Dev em Dobro">
-                        <figcaption>Caneca Dev em Dobro</figcaption>
+                        <img src="./assets/images/caneca_devemdobro.jpg" alt="Camiseta Dev em dobro-roxa">
+                        <figcaption>Camiseta Dev em Dobro Roxa</figcaption>
                     </figure>
-                    <div class="informacoes">
-                        <span><strong>Cor</strong> branca 250 ml</span>
-                        <span class="preço">89,00</span>
-                        <button>Adiconar ao carrinho</button>
+                    <div>
+                        <span>Cor: Roxa</span>
+                        <span>Tamnanho:500 ml</span>
+                        <span>R$ 50,00</span>
+                        <button>Adicionar ao Carrinho</button>
                     </div>
                 </li>
             </ul>
         </section>
     </main>
-    <footer class="rodape">
-        <div class="container">
-            <nav>
-                <h3>Institucional</h3>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="perguntas - frequentes">Perguntas Frequentes</a></li>
-                    <li><a href="#fale-conosco">Fale Conosco</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <h3>Ajuda</h3>
-                <ul>
-                    <li><a href="#trocas">Trocas e Devoluções</a></li>
-                    <li><a href="#termos">Termos e Condições</a></li>
-                    <li><a href="#politica">Politica de Privacidade</a></li>
-                    <li><a href="#padrão">Padrão de Qualidade</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <h3>Endereço</h3>
-                <ul>
-                    <li><a href="#">Rua Vale do Silício</a></li>
-                    <li>São Francisco, California</li>
-                    <li>Estados Unidos da América</li>
-                    <li><a href="#">(34) 11234-54678</a></li>
-                    <li><a href="#">vendas@ecommercedd.com</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="copyright">
-            <p>@2024 - Todos os direito reservados</p>
+    <footer>
+        <nav>
+            <h3>Institucional</h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Produtos">Produtos</a></li>
+                <li><a href="#Faq">Perguntas Frequentes</a></li>
+                <li><a href="#Contato">Fale Conosco</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <h3>Institucional</h3>
+            <ul>
+                <li><a href="">Ajuda</a></li>
+                <li><a href="#Trocas">Trocas e Devoluções</a></li>
+                <li><a href="#Termos">Termos e Condições</a></li>
+                <li><a href="#Politica">Politica de Privacidade</a></li>
+                <li><a href="#Padrão">Padrão de Qualidade</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <h3>Institucional</h3>
+            <ul>
+                <li><a href="">Endereço</a></li>
+                <li><a href="#">Rua Vale do Silicio</a></li>
+                <li>São Francisco, California</li>
+                <li>Estados Unidos da Amrérica</li>
+                <li><a href="#padrão">(34) 11234-5456789</a></li>
+                <li><a href="#padrão">vendas@ecommercedd.com</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p>@2024 - todos os direitos reservados</p>
         </div>
     </footer>
 
+    <!-- [1] -->
     <div id="modal-1" class="modal" aria-hidden="true">
+        <!-- [2] -->
         <div tabindex="-1" data-micromodal-close>
-            <div class="container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <!-- [3] -->
+            <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                 <header>
-                    <h2 id="modal-1-title">Carrinho de compras</h2>
+                    <h2 id="modal-1-title">
+                        Carrinho de Compras
+                    </h2>
 
-                    <button class="fechar" aria-label="Close modal" data-micromodal-close></button>
+                    <!-- [4] -->
+                    <button aria-label="Close modal" data-micromodal-close></button>
                 </header>
+
                 <div id="modal-1-content">
                     <table>
                         <thead>
                             <tr>
-                                <th class="th-produto">Produto</th>
+                                <th>Produto</th>
                                 <th>Descrição</th>
                                 <th>Preço</th>
                                 <th>Quantidade</th>
-                                <th class="th-total">Total</th>
+                                <th>Total</th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="td-produto"><img src="./assets/images/camiseta_roxa.jpg"
-                                        alt="Camiseta Dev em Dobro - Roxa">
-                                </td>
-                                <td>Camiseta Dev em Dobro</td>
-                                <td class="td-preço-unitario">R$ 89,00</td>
-                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
-                                <td class="td-preço-total">R$ 89,00</td>
-                                <td><button class="btn-remover" id="deletar">Deletar</button></td>
-                            </tr>
+                                <td><img src="./assets/images/camiseta_roxa.jpg" alt="Camiseta Dev em Dobro-Roxa"></td>                  
+                                <td>Camiseta Dev em Dobro - Roxa</td>
+                                <td>R$ 89,00</td>
+                                <td><input type="number" value="1" min="1"></td>
+                                <td>R$ 89,00</td>
+                                <td><button id="deletar">Deletar</button></td>
                             <tr>
-                                <td class="td-produto"><img src="./assets/images/caneca_devemdobro.jpg"
-                                        alt="Caneca Dev em Dobro - Roxa">
-                                </td>
+                                <td><img src="./assets/images/caneca_devemdobro.jpg" alt="Caneca Dev em Dobro-Roxa"></td>
+                            </td>
                                 <td>Caneca Dev em Dobro</td>
-                                <td class="td-preço-unitario">R$ 89,00</td>
-                                <td class="td-quantidade"><input type="number" value="1" min="1"></td>
-                                <td class="td-preço-total">R$ 89,00</td>
-                                <td><button class="btn-remover" id="deletar">Deletar</button></td>
+                                <td>R$ 50,00</td>
+                                <td><input type="number" value="1" min="1"></td>
+                                <td>R$ 89,00</td>
+                                <td><button id="deletar">Deletar</button></td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <div class="container-preço">
-                        <span class="total-carrinho">Total: R$ 0,00</span>
-                        <button class="finalizar-compra">Finalizar Compras</button>
+                    <div>
+                        <span id="total-carrinho">Total: R$ 0,00</span>
+                        <button>Finalizar compra</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js
 "></script>
 </body>
