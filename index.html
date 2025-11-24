@@ -15,22 +15,23 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href="css/rodape.css">
 </head>
 
 <body>
     <header class="cabecalho">
         <div class="header-conteudo">
             <div class="header-esquerda">
-                
+
                 <button class="menu-hamburguer">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
 
-            <a class="logo" href="/">
-                <img src="./assets/images/logo.svg" alt="Dev em Dobro">
-            </a>
+                <a class="logo" href="/">
+                    <img src="./assets/images/logo.svg" alt="Dev em Dobro">
+                </a>
             </div>
             <nav class="menu-principal">
                 <ul>
@@ -51,8 +52,8 @@
                     </li>
                 </ul>
             </nav>
-            <button class="botao-carrinho"  data-micromodal-trigger="modal-1">
-                <img src="./assets/images/icone_carrinho.svg" alt="Carrinho de compras"/>
+            <button class="botao-carrinho" data-micromodal-trigger="modal-1">
+                <img src="./assets/images/icone_carrinho.svg" alt="Carrinho de compras" />
                 <span id="contador-carrinho">0</span>
             </button>
         </div>
@@ -88,51 +89,49 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <nav>
-            <h3>Institucional</h3>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="Sobre">Sobre</a></li>
-                <li><a href="Podutos">Produtos</a></li>
-                <li><a href="Faq">Perguntas frequentes</a></li>
-                <li><a href="Fale-conosco">Fale Conosco</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <h3>Ajuda</h3>
-            <ul>
-                <li><a href="#trocas">Trocas e Devoluções</a></li>
-                <li><a href="#termos">Termos e Condições</a></li>
-                <li><a href="politica">Politica de Privacidade</a></li>
-                <li><a href="#padrão">Padrão de Qualidade</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <h3>Endereço</h3>
-            <ul>
-                <li><a href="#"></a>Rua Vale do Silicio</li>
-                <li>São Francisco, Califórnia</li>
-                <li>Estados Unidos da América</li>
-                <li><a href="#padrão">(35) 11234-54678</a></li>
-                <li><a href="padrão">vendas@ecommercedd.com</a></li>
-            </ul>
-        </nav>
-        <div>
+    <footer class="rodape">
+        <div class="container">
+            <nav>
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="Sobre">Sobre</a></li>
+                    <li><a href="Podutos">Produtos</a></li>
+                    <li><a href="Faq">Perguntas frequentes</a></li>
+                    <li><a href="Fale-conosco">Fale Conosco</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>Ajuda</h3>
+                <ul>
+                    <li><a href="#trocas">Trocas e Devoluções</a></li>
+                    <li><a href="#termos">Termos e Condições</a></li>
+                    <li><a href="politica">Politica de Privacidade</a></li>
+                    <li><a href="#padrão">Padrão de Qualidade</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>Endereço</h3>
+                <ul>
+                    <li><a href="#"></a>Rua Vale do Silicio</li>
+                    <li>São Francisco, Califórnia</li>
+                    <li>Estados Unidos da América</li>
+                    <li><a href="#padrão">(35) 11234-54678</a></li>
+                    <li><a href="padrão">vendas@ecommercedd.com</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copyright">
             <p>@2025 Todos os Direitos Reservados</p>
         </div>
     </footer>
 
-    <!-- [1] -->
     <div id="modal-1" class="modal" aria-hidden="true">
-        <!-- [2] -->
         <div tabindex="-1" data-micromodal-close>
-            <!-- [3] -->
             <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
                 <header>
                     <h2 id="modal-1-title">Carrinho de Compras</h2>
 
-                    <!-- [4] -->
                     <button aria-label="Close modal" data-micromodal-close></button>
                 </header>
 
