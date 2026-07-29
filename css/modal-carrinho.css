@@ -126,12 +126,11 @@ td .btn-remover {
 }
 
 @media(min-width: 769px) {
-    .modal .is-open{
+    .modal .is-open {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: var(--cor-neutra-escura);
-        background-color: rgba(00, 00, 00, 0.7);
+        background-color: rgba(00, 00, 00, 0.8);
     }
 
     .modal .container {
@@ -188,6 +187,7 @@ td .btn-remover {
     .finalizar-compra {
         width: 369px;
     }
+
     .td-quantidade {
         text-align: center;
     }

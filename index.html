@@ -43,7 +43,7 @@
                         <a href="#Sobre">Sobre</a>
                     </li>
                     <li>
-                        <a href="Produtos">Produtos</a>
+                        <a href="#Produtos">Produtos</a>
                     </li>
                     <li>
                         <a href="#Faq">Perguntas</a>
@@ -63,27 +63,27 @@
         <section class="produtos">
             <h2>Produtos</h2>
             <ul>
-                <li>
+                <li class="produto" data-id="camiseta-roxa">
                     <figure>
                         <img src="./assets/images/camiseta_roxa.jpg" alt="Camiseta Dev em Dobro-Roxa">
-                        <figcaption class="none">Camiseta Dev em Dobro</figcaption>
+                        <figcaption class="nome">Camiseta Dev em Dobro</figcaption>
                     </figure>
                     <div class="informacoes">
-                        <span><strong>Cor:</strong>Roxa</span>
+                        <span><strong>Cor:</strong> Roxa</span>
                         <span><strong>Tamanho:</strong> M</span>
-                        <span class="preço">R$ 89,00</span>
+                        <span class="preco">R$ 89,00</span>
                         <button class="adicionar-ao-carrinho">Adicionar ao carrinho</button>
                     </div>
                 </li>
-                <li>
+                <li class="produto" data-id="caneca-devemdobro">
                     <figure>
                         <img src="./assets/images/caneca_devemdobro.jpg" alt="Caneca Dev em Dobro">
-                        <figcaption class="none">Caneca Dev em Dobro</figcaption>
+                        <figcaption class="nome">Caneca Dev em Dobro</figcaption>
                     </figure>
                     <div class="informacoes">
                         <span><strong>Cor:</strong> Branca</span>
-                        <span>Tamanho: 250 ml</span>
-                        <span class="preço">R$ 40,00</span>
+                        <span><strong>Tamanho:</strong> 250 ml</span>
+                        <span class="preco">R$ 40,00</span>
                         <button class="adicionar-ao-carrinho">Adicionar ao carrinho</button>
                     </div>
                 </li>
@@ -96,10 +96,10 @@
                 <h3>Institucional</h3>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="Sobre">Sobre</a></li>
-                    <li><a href="Podutos">Produtos</a></li>
-                    <li><a href="Faq">Perguntas frequentes</a></li>
-                    <li><a href="Fale-conosco">Fale Conosco</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#Produtos">Produtos</a></li>
+                    <li><a href="#Faq">Perguntas frequentes</a></li>
+                    <li><a href="#Fale-conosco">Fale Conosco</a></li>
                 </ul>
             </nav>
             <nav>
@@ -112,7 +112,7 @@
                 </ul>
             </nav>
             <nav>
-                <h3>Endereço</h3>
+                <h3>Endereco</h3>
                 <ul>
                     <li><a href="#"></a>Rua Vale do Silicio</li>
                     <li>São Francisco, Califórnia</li>
@@ -182,6 +182,9 @@
 
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js
 "></script>
+
+    <script src="./js/carrinho.js"></script>
+
 </body>
 
 </html>
