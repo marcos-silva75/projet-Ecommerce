@@ -72,3 +72,18 @@ function obterProdutosDoCarrinho() {
     const Produtos = localStorage.getItem("carrinho");
     return Produtos ? JSON.parse(Produtos) : [];
 };
+
+// Passo 4 - Atualizar o contador do carrinho de compras.
+function atualizarContadorCarrinho() {
+    const carrinho = obterProdutosDoCarrinho();
+    let Total = 0;
+
+    carrinho.forEach(produto => {
+        Total += produto.quantidade;
+    });
+
+    document.getElementById("contador-carrinho").textContent = Total;
+
+}
+
+atualizarContadorCarrinho();
