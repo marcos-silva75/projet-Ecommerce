@@ -59,7 +59,8 @@ botoesAdicionarAoCarrinho.forEach(botao => {
         }
 
         salvarProdutosNoCarrinho(carrinho);
-
+        atualizarContadorCarrinho();
+        renderizarTabelaDoCarrinho();
     });
 });
 
@@ -107,8 +108,7 @@ function renderizarTabelaDoCarrinho() {
           <input type="number" value="${produto.quantidade}" min="1" />
          </td>
          <td class="td-preco-total">R$ ${produto.preco.toFixed(2).replace(".", ",")}</td>
-         <td><buttom class="btn-remover" data-id="${produto.id} id="deletar"></buttom></td>
-         `;
+         <td><buttom class="btn-remover" data-id="${produto.id} id="deletar"></buttom></td>`;
         corpoTabela.appendChild(tr);
     });
 }
