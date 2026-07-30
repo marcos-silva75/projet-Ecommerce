@@ -1,1 +1,3 @@
-MicroModal.init();
+document.addEventListener('DOMCcontentLoad', () => {
+    MicroModal.init();
+});
