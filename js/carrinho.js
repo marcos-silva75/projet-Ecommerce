@@ -87,13 +87,13 @@ function atualizarContadorCarrinho() {
 //Passo 5 - Renderizar a tabela do carrinho de compras
 function renderizarTabelaDoCarrinho() {
     const produtos = obterProdutosDoCarrinho();
-    const corpoTabela = document.querySelector("modal-1-content tbody");
+    const corpoTabela = document.querySelector("#modal-1-content tbody");
 
     corpoTabela.innerHTML = ""; // Limpar tabela antes de renderizar
 
     produtos.forEach(produto => {
         const tr = document.createElement("tr");
-        tr.innerHTML = `<td class="td-produto>
+        tr.innerHTML = `<td class="td-produto">
         <img
          src="${produto.imagem}"
          alt="${produto.nome}"
@@ -105,19 +105,19 @@ function renderizarTabelaDoCarrinho() {
           <input type="number" class="input-quantidade" data-id="${produto.id}" value="${produto.quantidade}" min="1" />
          </td>
          <td class="td-preco-total">R$ ${(produto.preco * produto.quantidade).toFixed(2).replace(".", ",")}</td>
-         <td><buttom class="btn-remover" data-id="${produto.id} id="deletar"></buttom></td>`;
+         <td><button class="btn-remover" data-id="${produto.id}" Remover></button></td>`;
         corpoTabela.appendChild(tr);
     });
 }
 
 // Objetivo 2 - Remover produtos do carrinho.
 //     Passo 1 - Pegar o botão de excluir do HTML.
-const corpoTabela = document.querySelector("modal-1-content table tbody");
+const corpoTabela = document.querySelector("#modal-1-content table tbody");
 
 //passo 2 -adicionar evento de escuta no tbody
 corpoTabela.addEventListener("click", evento => {
 
-    if (event.target.classList.contains('btn-remover')) {
+    if (evento.target.classList.contains("btn-remover")) {
         const id = evento.target.dataset.id;
         //passo 3 - remover o produto do localStorage
         removerProdutoDoCarrinho(id);
@@ -145,7 +145,7 @@ function removerProdutoDoCarrinho(id) {
     const produtos = obterProdutosDoCarrinho();
 
     //filtrar os produtos que nao tem o id passado por parametro
-    const carrinhoAtualizado = produtos.filter(produtos => produto.id !== id);
+    const carrinhoAtualizado = produtos.filter(produto => produto.id !== id);
 
     salvarProdutosNoCarrinho(carrinhoAtualizado);
     atualizarCarrinhoETabela();
@@ -159,7 +159,7 @@ function atualizarValorTotalCarrinho() {
         total += produto.preco * produto.quantidade;
     });
 
-    document.querySelector("total-carrinho").textContent = `R$ ${total.toFixed(2).replace(".", ",")}`;
+    document.querySelector("#total-carrinho").textContent = `Total: R$ ${total.toFixed(2).replace(".", ",")}`;
 }
 
 function atualizarCarrinhoETabela() {
@@ -168,4 +168,4 @@ function atualizarCarrinhoETabela() {
     atualizarValorTotalCarrinho();
 }
 
-atualizarValorTotalCarrinho();
+atualizarCarrinhoETabela();
